@@ -72,9 +72,9 @@ public class LaunchersActivity extends Activity implements OnClickListener {
 //		mAboutRecognitionOnly.setOnClickListener(this);
 
 		// Setup example links
-//		mArProgrammatically = (LinearLayout)findViewById(R.id.play_ar_programmatically);
-//		mArProgrammatically.setClickable(true);
-//		mArProgrammatically.setOnClickListener(this);
+		mArProgrammatically = (LinearLayout)findViewById(R.id.play_ar_programmatically);
+		mArProgrammatically.setClickable(true);
+		mArProgrammatically.setOnClickListener(this);
 		mArFromCraftAR = (LinearLayout)findViewById(R.id.play_ar_from_craftar);
 		mArFromCraftAR.setClickable(true);
 		mArFromCraftAR.setOnClickListener(this);
