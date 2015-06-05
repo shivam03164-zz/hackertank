@@ -22,7 +22,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:text="Start a Ride"
-            android:layout_below="@+id/join_ride"
+            android:layout_above="@+id/join_ride"
             android:textAppearance="?android:attr/textAppearanceLarge"
             />
     <Button
@@ -31,8 +31,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Start a Ride"
             android:layout_below="@+id/join_ride"
+            android:text="Register Vehicle"
             android:textAppearance="?android:attr/textAppearanceLarge"
             />
 

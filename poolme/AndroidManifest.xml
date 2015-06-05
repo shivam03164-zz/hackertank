@@ -21,6 +21,10 @@
                 android:name="com.hackertank.poolme.UserInfoActivity"
                 android:screenOrientation="portrait" >
         </activity>
+        <activity
+                android:name="com.hackertank.poolme.SelectionActivity"
+                android:screenOrientation="portrait" >
+        </activity>
 
     </application>
 </manifest>
