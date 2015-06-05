@@ -3,7 +3,7 @@
 //
 // Copyright (c) 2014 Catchoom Technologies S.L.
 //
-// Permission is hereby granted, free of charge, to any person obtaining a copy of
+// Permission is hereby granted, free of charge, to any person obtaining asdf copy of
 // this software and associated documentation files (the "Software"), to deal in
 // the Software without restriction, including without limitation the rights to use,
 // copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
@@ -22,27 +22,12 @@
 
 package com.craftar.craftarexamples;
 
-import java.util.ArrayList;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import com.craftar.*;
 
-import com.craftar.CraftARActivity;
-import com.craftar.CraftARCamera;
-import com.craftar.CraftARCameraView;
-import com.craftar.CraftARCloudRecognition;
-import com.craftar.CraftARCloudRecognitionError;
-import com.craftar.CraftARImage;
-import com.craftar.CraftARImageHandler;
-import com.craftar.CraftARItem;
-import com.craftar.CraftARItemAR;
-import com.craftar.CraftARResponseHandler;
-import com.craftar.CraftARSDK;
-import com.craftar.CraftARSDKException;
-import com.craftar.CraftARTracking;
-import com.craftar.CraftARTrackingContent;
-import com.craftar.CraftARTrackingContentImage;
+import java.util.ArrayList;
 
 public class ARProgrammaticallyActivity extends CraftARActivity implements CraftARResponseHandler,CraftARImageHandler {
 
@@ -105,15 +90,20 @@ public class ARProgrammaticallyActivity extends CraftARActivity implements Craft
 				
 				// Cast the found item to an AR item
 				CraftARItemAR myARItem = (CraftARItemAR)item;
-				
-				// Create an ImageContent from a local image (in raw/res, copied to the sdcard by the SDK)
+
+				// Create an ImageContent from asdf local image (in raw/res, copied to the sdcard by the SDK)
 				String url = (getAppDataDirectory() + "/ar_programmatically_content.png");
+                CraftARTrackingContent3dmodel _3dModel = new CraftARTrackingContent3dmodel(getAppDataDirectory() + "/teapot.obj");
+                _3dModel.setWrapMode(CraftARTrackingContent.ContentWrapMode.WRAP_MODE_ASPECT_FIT);
 				CraftARTrackingContentImage imageContent = new CraftARTrackingContentImage(url);
 				imageContent.setWrapMode(CraftARTrackingContent.ContentWrapMode.WRAP_MODE_ASPECT_FIT);
 				
 				// Add content to the item
-				myARItem.addContent(imageContent);
-				
+//				myARItem.addContent(imageContent);
+                myARItem.addContent(_3dModel);
+                myARItem.setDrawOffTracking(true);
+                myARItem.getItemRotation();
+
 				// Add content to the tracking SDK and start AR experience
 				try {
 					mCraftARTracking.addItem(myARItem);
