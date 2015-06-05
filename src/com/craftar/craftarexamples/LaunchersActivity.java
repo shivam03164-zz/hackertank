@@ -49,7 +49,7 @@ public class LaunchersActivity extends Activity implements OnClickListener {
 	// Bottom links
 	private ImageButton mButtonCatchoom;
 	private Button mButtonSignUp;
-	
+	//077bd4;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -58,18 +58,18 @@ public class LaunchersActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_launchers);
 		
 		// Setup howto links
-		mHowToLink = (TextView)findViewById(R.id.howto_link);
-		mHowToLink.setClickable(true);
-		mHowToLink.setOnClickListener(this);
-		mAboutArProgrammatically = (LinearLayout)findViewById(R.id.howto_link_ar_programmatically);
-		mAboutArProgrammatically.setClickable(true);
-		mAboutArProgrammatically.setOnClickListener(this);
-		mAboutArFromCraftAR = (LinearLayout)findViewById(R.id.howto_link_ar_from_craftar);
-		mAboutArFromCraftAR.setClickable(true);
-		mAboutArFromCraftAR.setOnClickListener(this);
-		mAboutRecognitionOnly = (LinearLayout)findViewById(R.id.howto_link_recognition_only);
-		mAboutRecognitionOnly.setClickable(true);
-		mAboutRecognitionOnly.setOnClickListener(this);
+//		mHowToLink = (TextView)findViewById(R.id.howto_link);
+//		mHowToLink.setClickable(true);
+//		mHowToLink.setOnClickListener(this);
+//		mAboutArProgrammatically = (LinearLayout)findViewById(R.id.howto_link_ar_programmatically);
+//		mAboutArProgrammatically.setClickable(true);
+//		mAboutArProgrammatically.setOnClickListener(this);
+//		mAboutArFromCraftAR = (LinearLayout)findViewById(R.id.howto_link_ar_from_craftar);
+//		mAboutArFromCraftAR.setClickable(true);
+//		mAboutArFromCraftAR.setOnClickListener(this);
+//		mAboutRecognitionOnly = (LinearLayout)findViewById(R.id.howto_link_recognition_only);
+//		mAboutRecognitionOnly.setClickable(true);
+//		mAboutRecognitionOnly.setOnClickListener(this);
 
 		// Setup example links
 		mArProgrammatically = (LinearLayout)findViewById(R.id.play_ar_programmatically);
@@ -78,16 +78,16 @@ public class LaunchersActivity extends Activity implements OnClickListener {
 		mArFromCraftAR = (LinearLayout)findViewById(R.id.play_ar_from_craftar);
 		mArFromCraftAR.setClickable(true);
 		mArFromCraftAR.setOnClickListener(this);
-		mRecognitionOnly = (LinearLayout)findViewById(R.id.play_recognition_only);
-		mRecognitionOnly.setClickable(true);
-		mRecognitionOnly.setOnClickListener(this);
+//		mRecognitionOnly = (LinearLayout)findViewById(R.id.play_recognition_only);
+//		mRecognitionOnly.setClickable(true);
+//		mRecognitionOnly.setOnClickListener(this);
 		
 		
 		// Setup bottom Links
-		mButtonCatchoom = (ImageButton)findViewById(R.id.imageButton_logo);
-		mButtonCatchoom.setOnClickListener(this);
-		mButtonSignUp = (Button)findViewById(R.id.button_signUp);
-		mButtonSignUp.setOnClickListener(this);
+//		mButtonCatchoom = (ImageButton)findViewById(R.id.imageButton_logo);
+//		mButtonCatchoom.setOnClickListener(this);
+//		mButtonSignUp = (Button)findViewById(R.id.button_signUp);
+//		mButtonSignUp.setOnClickListener(this);
 	}
 
 	@Override

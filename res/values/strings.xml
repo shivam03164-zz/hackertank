@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">CraftAR SDK Examples</string>
+    <string name="app_name">Hackers Tank</string>
     <string name="title_activity_main">CraftAR SDK</string>
     <string name="action_settings">Settings</string>
     <string name="launchers_howto">How to use the examples</string>
-    <string name="launchers_ar_programmatically">AR programmatically</string>
-    <string name="launchers_ar_from_craftar">AR from CraftAR</string>
+    <string name="launchers_ar_programmatically">Start Mapping 3D</string>
+    <string name="launchers_ar_from_craftar">Start Mapping 2D </string>
     <string name="launchers_reco_only">Recognition only</string>
     <string name="launchers_signup">Sign Up</string>
     <string name="launchers_about">About</string>
